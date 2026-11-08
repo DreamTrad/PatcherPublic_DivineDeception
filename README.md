@@ -23,7 +23,7 @@ S’il vous faut des dépendances en plus, pip install la dépendance dans le ve
 
 Mettez le logo du jeu dans resources au nom `game-logo.png` et lancez la ligne suivante pour compiler les ressources.
 
-    pyside6-rcc resources\resources.qrc -o patcher\ui\resources_rc.py
+    pyside6-rcc resources/resources.qrc -o patcher/ui/resources_rc.py
 
 Pour run
 

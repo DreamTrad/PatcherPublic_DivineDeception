@@ -5,12 +5,12 @@ import pathlib
 # == INFORMATIONS GÉNÉRALES ===================================================
 
 # Nom de la fenêtre du logiciel
-NAME_WINDOW: str = "DreamTrad : Patcheur de "
+NAME_WINDOW: str = "DreamTrad : Patcheur de The Divine Deception"
 
 # Indique si le jeu est une version Steam
 IS_STEAM_GAME: bool = True
 # Nom du dossier du jeu dans Steam (utilisé uniquement si IS_STEAM_GAME = True)
-STEAM_FOLDER: str = ""
+STEAM_FOLDER: str = "The Divine Deception"
 
 
 # == OUTILS / ENVIRONNEMENT ===================================================

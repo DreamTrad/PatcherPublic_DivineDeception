@@ -7,12 +7,11 @@ Description : call tool to repack the game.
 
 # == Imports ==================================================================
 
-import subprocess
 from logging import Logger
 
 # -------------------- Import Lib User -------------------
 from patcher import config
-from patcher.utils import steam, xdelta
+from patcher.utils import steam
 from patcher.utils.logger import get_logger
 
 # == Global Variables =========================================================
@@ -25,11 +24,4 @@ _logger: Logger = get_logger(__name__)
 
 def repack() -> None:
     """whole patching process."""
-    _call_repack()
-
-
-def _call_repack() -> None:
-
-    command: list[str] = ["tool.exe", "file.txt"]
-
-    subprocess.run(command, shell=True, check=False, cwd=config.TOOL_FOLDER)
+    steam.copy_data_in_steam_game_folder(str(config.GAME_FOLDER), config.PATCH_FOLDER)
